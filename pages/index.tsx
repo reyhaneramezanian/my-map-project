@@ -1,0 +1,11 @@
+import { MapPage } from "../src/components/pages/index";
+import Layout from "../src/layouts/layout";
+const Index: NextPageWithLayout = () => {
+  return <MapPage />;
+};
+
+Index.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
+
+export default Index;
